@@ -6,7 +6,18 @@ const printToDom = (myInnerds, myElement) => {
 const buildDomString = (myDataArray) => {
   let myString = '';
   myDataArray.forEach(element => {
-    myString += `<h4>${element.name}</h4>`;
+    myString += `<div class="col-md-3">`;
+    myString +=   `<div class="panel">`;
+    myString +=     `<div class="panel-heading">`;
+    myString +=     `<h3 class="panel-title">${element.name}</h3>`;
+    myString +=     `</div>`;
+    myString +=     `<div class="panel-body">`;
+    myString +=       `<img src='${element.image}' class='charImage'>`;
+    myString +=       `<p class='charDesc'>${element.description}</p>`;
+    myString +=     `</div>`;
+    myString +=   `</div>`;
+    myString += `</div>`;
+    //myString += 
   });
   printToDom(myString, "mySuperhero");
 };

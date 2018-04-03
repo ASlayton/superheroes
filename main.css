@@ -5,3 +5,22 @@ body {
 h2 {
   color: antiquewhite;
 }
+
+.panel > .panel-heading {
+  background-color: #F78F3F;
+}
+
+.panel {
+  background-color: #504A4A;
+  border: 1px solid white;
+  text-align: center;
+  height: 450px;
+}
+
+.charDesc {
+  color: #E23636;
+}
+
+.charImage {
+  border-radius: 100%;
+}
