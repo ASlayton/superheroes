@@ -12,7 +12,12 @@ const buildDomString = (myDataArray) => {
     myString +=     `<h3 class="panel-title">${element.name}</h3>`;
     myString +=     `</div>`;
     myString +=     `<div class="panel-body">`;
-    myString +=       `<img src='${element.image}' class='charImage'>`;
+    let myGender = element.gender;
+    if(myGender.toLowerCase() === 'male'){
+      myString +=       `<img src='${element.image}' class='charImage male'>`;
+    }else{
+      myString +=       `<img src='${element.image}' class='charImage female'>`;
+    };
     myString +=       `<p class='charDesc'>${element.description}</p>`;
     myString +=     `</div>`;
     myString +=   `</div>`;
